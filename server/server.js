@@ -59,7 +59,7 @@ function server(io) {
 
         var r = getRoom(room);
         if (typeof r === 'object') {
-            return Object.keys(r.sockets);
+            return Object.keys(r);
         }
         else {
             return [];
